@@ -1,0 +1,51 @@
+name: flavor_zr
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_flavorizr: ^2.2.1
+
+flavorizr:
+  ide: idea
+  flavors:
+    flavorproduction:
+      app:
+        name: "Flavor production"
+
+      android:
+        applicationId: "com.flavor.flavorproduction"
+        icon : "assets/flavors/production/ic_launcher.png"
+      ios:
+        bundleId: "com.flavor.flavorproduction"
+        icon: "assets/flavors/production/ic_launcher.png"
+    flavordevelopment:
+      app:
+        name: "Flavor development"
+      android:
+        applicationId: "com.flavor.flavordevelopment"
+        icon: "assets/flavors/development/ic_launcher.png"
+      ios:
+        bundleId: "com.flavor.flavordevelopment"
+        icon: "assets/flavors/development/ic_launcher.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/flavors/
+    - assets/flavors/development/
+    - assets/flavors/production/
